@@ -7,7 +7,7 @@
 
 ARCH_X86_HAVE_SSSE3 := true
 ARCH_X86_HAVE_MOVBE := false # Only supported on Atom.
-ARCH_X86_HAVE_POPCNT := true
+ARCH_X86_HAVE_POPCNT := false  # To support Core 2.
 
 
 # CFLAGS for this arch
