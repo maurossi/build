@@ -7,12 +7,12 @@
 
 ARCH_X86_HAVE_SSSE3 := true
 ARCH_X86_HAVE_MOVBE := false # Only supported on Atom.
-ARCH_X86_HAVE_POPCNT := true
-ARCH_X86_HAVE_SSE4 := true
-ARCH_X86_HAVE_SSE4_1 := true
-ARCH_X86_HAVE_SSE4_2 := true
+ARCH_X86_HAVE_POPCNT := false
+ARCH_X86_HAVE_SSE4 := false
+ARCH_X86_HAVE_SSE4_1 := false
+ARCH_X86_HAVE_SSE4_2 := false
 
 
 # CFLAGS for this arch
 arch_variant_cflags := \
-    -march=x86-64
+    -march=x86-64 -mno-sse4.2 -mno-popcnt
