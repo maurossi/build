@@ -15,4 +15,4 @@ ARCH_X86_HAVE_SSE4_2 := false
 
 # CFLAGS for this arch
 arch_variant_cflags := \
-    -march=x86-64 -mno-sse4.2 -mno-popcnt
+    -march=x86-64 -mno-popcnt -mno-sse4 -mno-sse4.1 -mno-sse4.2
